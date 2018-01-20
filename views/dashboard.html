@@ -1,0 +1,151 @@
+<div class="wrapper">
+  <header class="main-header">
+    <!-- Logo -->
+    <a  class="logo">
+      <!-- mini logo sidebar mini 50x50 -->
+      <span class="logo-mini">
+        <b>MM</b>
+      </span>
+      <!-- logo -->
+      <span class="logo-lg">
+        My<b><em>Monitor</em></b>
+      </span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li>
+            <a class="big-font" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <section class="sidebar">
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="img/user.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>{{ usuario.nombre | limitTo:18}}</p>
+          <!-- Status -->
+          <a><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <li><a><i class="fa fa-clock-o"></i>
+          <span>
+          <ds-widget-clock class="clock" show-digital digital-format="'hh:mm:ss a'">></ds-widget-clock>
+        </span></a></li>
+
+        <li class="header">MENU</li>
+
+        <li ui-sref-active="active">
+        	<a ui-sref="dashboard.monitor">
+        		<i class="fa fa-tv"></i> <span>Monitor</span>
+        	</a>
+        </li>
+       <li ui-sref-active="active">
+        	<a ui-sref="dashboard.historic">
+        		<i class="fa fa-bar-chart"></i> <span>Historic</span>
+        	</a>
+        </li>
+
+          <li class="treeview">
+            <a>
+              <i class="fa fa-exclamation-triangle"></i>
+              <span>Alerts</span>
+              <span class="pull-right-container">
+                <small class="label pull-right label-warning"> 0 </small>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a ui-sref="dashboard.alerts">
+                  <i class="fa fa-circle-o"></i> Last Alerts
+                  <span class="pull-right-container">
+                    <span class="label label-warning pull-right"> 0 </span>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a ui-sref="dashboard.sensors">
+                  <i class="fa fa-circle-o"></i> Sensors Range
+                </a>
+              </li>
+
+              <li>
+                <a ui-sref="dashboard.notifications">
+                  <i class="fa fa-circle-o"></i> Notifications
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        <li class="header"></li>
+
+        <li><a ng-click="LogOut()"><i class="fa fa-sign-out"></i> <span>Log Out</span></a></li>
+
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper -->
+  <div class="content-wrapper">
+
+  <!-- CONTENIDO DINÁMICO DE ANGULAR -->
+	<ui-view name="dash-view"></ui-view>
+
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer dark">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+      Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2018 <a target="_blank" href="http://www.cinvestav.mx/">CINVESTAV</a>.</strong> All rights reserved.
+  </footer>
+
+
+
+
+  <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Create the tabs -->
+      <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+        <li class="active">
+          <a class="big-font" data-toggle="tab"><i class="fa fa-gears"></i> &nbsp; Settings </a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- Home tab content -->
+        <div class="tab-pane active" id="control-sidebar-home-tab">
+          More settings here..
+        </div>
+        <!-- /.tab-pane -->
+
+      </div>
+    </aside>
+    <!-- /.control-sidebar -->
+    <div class="control-sidebar-bg"></div>
+
+  <!-- ./wrapper -->
+</div>

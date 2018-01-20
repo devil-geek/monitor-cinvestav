@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <meta name="theme-color" content="#008d4c">
+  <meta name="author" content="Car OJ">
+  <meta name="contact" content="car.oj@hotmail.com">
+  <title>Monitor CINVESTAV</title>
+
+  <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="./node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="libs/adminlte/css/adminlte.min.css" />
+  <link rel="stylesheet" type="text/css" href="libs/adminlte/css/skin-green.min.css" />
+  <link rel="stylesheet" type="text/css" href="libs/angular-clock/angular-clock.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body class="fixed hold-transition skin-green sidebar-mini">
+
+  <!-- Aqui se cargará todo el contenido de las diferentes vistas es controlado por el $stateprovider -->
+  <ui-view></ui-view>
+
+  <script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/adminlte/js/app.min.js"></script>
+
+  <script type="text/javascript" src="libs/adminlte/js/adminlte.min.js"></script>
+  <script type="text/javascript" src="libs/jquery/jquery.slimscroll.min.js"></script>
+
+  <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="./node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="./node_modules/angular-animate/angular-animate.min.js"></script>
+  <script type="text/javascript" src="./node_modules/angular-touch/angular-touch.min.js"></script>
+  <script type="text/javascript" src="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+  <script type="text/javascript" src="libs/angular-clock/angular-clock.min.js"></script>
+  <script type="text/javascript" src="./node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+  <script type="text/javascript" src="./node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+  <script type="text/javascript" src="./node_modules/angularjs-gauge/dist/angularjs-gauge.min.js"></script>
+  <!-- Scripts de aplicación -->
+  <script type="text/javascript" src="js/controllers/LoginCtrl.js"></script>
+  <script type="text/javascript" src="js/controllers/DashboardCtrl.js"></script>
+  <script type="text/javascript" src="js/controllers/MonitorCtrl.js"></script>
+  <script type="text/javascript" src="js/services/Apisvc.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>

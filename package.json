@@ -1,0 +1,24 @@
+{
+  "name": "monitor-cinvestav",
+  "version": "1.0.0",
+  "description": "Monitoring sistem for water sensors",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Car OJ",
+  "license": "ISC",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.11",
+    "angular": "^1.6.7",
+    "angular-animate": "^1.6.7",
+    "angular-chart.js": "^1.1.1",
+    "angular-touch": "^1.6.7",
+    "angular-ui-bootstrap": "^2.5.6",
+    "angularjs-gauge": "^2.2.0",
+    "bootstrap": "^3.3.7",
+    "chart.js": "^2.7.1",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {}
+}

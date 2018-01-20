@@ -1,0 +1,153 @@
+<section class="content-header">
+  <h1>
+    Monitor
+    <small>Last Received: {{ monitorData.fecha }}</small>
+  </h1>
+</section>
+
+<section class="content">
+  <div class="row">
+    <div class="col-md-2 col-sm-6 col-xs-12">
+      <div class="small-box bg-aqua">
+        <div class="inner">
+          <h3>{{ monitorData.ph }} % </h3>
+
+          <p>NO2</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-flask"></i>
+        </div>
+        <a href="#" class="small-box-footer">
+          More info
+          <i class="fa fa-arrow-circle-right"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="col-md-2 col-sm-6 col-xs-12">
+      <div class="small-box bg-yellow">
+        <div class="inner">
+          <h3>{{ monitorData.do }} %</h3>
+
+          <p>O3</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-tint"></i>
+        </div>
+        <a href="#" class="small-box-footer">
+          More info
+          <i class="fa fa-arrow-circle-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6 col-xs-12">
+      <div class="small-box bg-purple">
+        <div class="inner">
+          <h3>{{ monitorData.tu }} lux</h3>
+
+          <p>Photometer</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-sun-o"></i>
+        </div>
+        <a href="#" class="small-box-footer">
+          More info
+          <i class="fa fa-arrow-circle-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6 col-xs-12">
+      <div class="small-box bg-blue">
+        <div class="inner">
+          <h3>{{ monitorData.tu }} m</h3>
+
+          <p>Ultrasonic</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-rss"></i>
+        </div>
+        <a href="#" class="small-box-footer">
+          More info
+          <i class="fa fa-arrow-circle-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6 col-xs-12">
+      <div class="small-box bg-red">
+        <div class="inner">
+          <h3>ON</h3>
+
+          <p>PIR</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-eye"></i>
+        </div>
+        <a href="#" class="small-box-footer">
+          More info
+          <i class="fa fa-arrow-circle-right"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="col-md-2 col-sm-6 col-xs-12">
+      <div class="small-box bg-lime">
+        <div class="inner">
+          <h3>{{ monitorData.tu }} %</h3>
+
+          <p>CO</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-adjust"></i>
+        </div>
+        <a href="#" class="small-box-footer">
+          More info
+          <i class="fa fa-arrow-circle-right"></i>
+        </a>
+      </div>
+    </div>
+    
+
+    <div class="col-md-2 col-sm-6 col-xs-12">
+      <div class="small-box bg-green">
+        <div class="inner">
+          <h3>{{ monitorData.tu }} %</h3>
+
+          <p>CO2</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-adjust"></i>
+        </div>
+        <a href="#" class="small-box-footer">
+          More info
+          <i class="fa fa-arrow-circle-right"></i>
+        </a>
+      </div>
+    </div>
+
+    
+
+
+  </div>
+
+  <div class="box">
+    <div class="box-header">
+      <h3 class="box-title">Últimos eventos</h3>
+    </div>
+    <div class="box-body">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options"
+            chart-dataset-override="datasetOverride" chart-click="onClick" width="50" height="18">
+          </canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
