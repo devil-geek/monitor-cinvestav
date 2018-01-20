@@ -1,6 +1,5 @@
 angular.module("app.services", [])
-    .service("ApiSvc", function ($http, $q) {
-        var API = "http://ttrservers.dyndns.org:9091/api/";
+    .service("ApiSvc", function ($http, $q, API) {
         return {
             getAllSensors: function () {
                 var defered = $q.defer();

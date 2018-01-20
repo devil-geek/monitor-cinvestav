@@ -1,4 +1,5 @@
-angular.module("app",['app.controllers', 'app.services', 'ui.router', 'ui.bootstrap', 'ngAnimate', 'ngTouch', 'ds.clock', 'chart.js', 'angularjs-gauge'])
+angular.module("app",['app.controllers', 'app.services', 'ui.router', 'ui.bootstrap', 'ngAnimate', 'toastr', 'ngTouch', 'ds.clock', 'chart.js', 'angularjs-gauge','720kb.datepicker'])
+.constant('API',"http://ttrservers.dyndns.org:9091/api/")
 .config(function($stateProvider, $urlRouterProvider, ChartJsProvider){
 
   $stateProvider
@@ -24,6 +25,16 @@ angular.module("app",['app.controllers', 'app.services', 'ui.router', 'ui.bootst
         }
       }
   })
+
+  .state("dashboard.historic",{
+    url:"/historic",
+    views: {
+      'dash-view': {
+        templateUrl: 'views/historic.html',
+        controller: 'HistoricCtrl'
+      }
+    }
+})
 
   $urlRouterProvider.otherwise('/dashboard/monitor');
 
