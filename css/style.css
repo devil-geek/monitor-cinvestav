@@ -250,3 +250,26 @@ table {
 .small-box h3{
 	font-size: 30px !important;
 }
+
+._720kb-datepicker-calendar-header:nth-child(odd){
+	background-color: #008d4c !important;
+}
+
+._720kb-datepicker-calendar-days-header{
+	background-color: rgba(0, 166, 90, 0.5) !important;
+}
+.md-radio--fake{
+	box-sizing: content-box !important;
+}
+
+.md-radio--fake span{
+	box-sizing: content-box !important;
+}
+.md-radio{
+	box-sizing: content-box !important;
+}
+
+.content{
+	padding: 10px 30px !important;
+	margin: 0 auto !important;
+}

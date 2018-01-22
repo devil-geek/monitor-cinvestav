@@ -1,26 +1,21 @@
 <section class="content-header">
     <h1>
-        Reporte {{titulo}}
+        Historic Report
     </h1>
-    <!--  <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-      <li class="active">Here</li>
-    </ol>-->
 </section>
-<div class="container">
-    <br>
+<div class="content">
     <div class="row">
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-12">
             <div class="box box-default">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Seleccione rango de fehas</h3>
+                    <h3 class="box-title">Select date range</h3>
                 </div>
 
                 <div class="box-body">
                     <!-- Date range -->
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-xs-6">
+                            <div class="col-xs-3">
                                 <datepicker date-format="yyyy-MM-dd" selector="form-control">
                                     <div class="input-group">
                                         <span class="input-group-addon" style="cursor: pointer">
@@ -30,7 +25,7 @@
                                     </div>
                                 </datepicker>
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-3">
                                 <datepicker date-format="yyyy-MM-dd" selector="form-control">
                                     <div class="input-group">
                                         <span class="input-group-addon" style="cursor: pointer">
@@ -40,118 +35,108 @@
                                     </div>
                                 </datepicker>
                             </div>
+                            <div class="col-xs-4">
+                                <label class="md-radio block">
+                                    <input type="radio" name="demo2[]">
+                                    <span class="md-radio--fake">
+                                        <span></span>
+                                    </span>
+                                    <div>
+                                        Table
+                                    </div>
+                                </label>
+                                <label class="md-radio block">
+                                    <input type="radio" name="demo2[]" checked="true">
+                                    <span class="md-radio--fake">
+                                        <span></span>
+                                    </span>
+                                    <div>
+                                        Graphic
+                                    </div>
+                                </label>
+                            </div>
                         </div>
-                                <label class="">
-                                  <div class="icheckbox_minimal-blue checked" aria-checked="true" aria-disabled="false" style="position: relative;"><input type="checkbox" class="minimal" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                        <hr/>
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Sensors</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-8 col-md-8">
+                                <label class="md-checkbox block">
+                                    <input type="checkbox" name="demo2[]">
+                                    <span class="md-checkbox--fake"></span>
+                                    <div>
+                                        NO2
+                                    </div>
                                 </label>
-                                <label class="">
-                                  <div class="icheckbox_minimal-blue checked" aria-checked="true" aria-disabled="false" style="position: relative;"><input type="checkbox" class="minimal" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                <label class="md-checkbox block">
+                                    <input type="checkbox" name="demo2[]">
+                                    <span class="md-checkbox--fake"></span>
+                                    <div>
+                                        O3
+                                    </div>
                                 </label>
-                                <label>
-                                  <div class="icheckbox_minimal-blue disabled" aria-checked="false" aria-disabled="true" style="position: relative;"><input type="checkbox" class="minimal" disabled="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                                  Minimal skin checkbox
+                                <label class="md-checkbox block">
+                                    <input type="checkbox" name="demo2[]">
+                                    <span class="md-checkbox--fake"></span>
+                                    <div>
+                                        PHOTOMETER
+                                    </div>
                                 </label>
-                              
+                                <label class="md-checkbox block">
+                                    <input type="checkbox" name="demo2[]">
+                                    <span class="md-checkbox--fake"></span>
+                                    <div>
+                                        ULTRASONIC
+                                    </div>
+                                </label>
+                                <label class="md-checkbox block">
+                                    <input type="checkbox" name="demo2[]">
+                                    <span class="md-checkbox--fake"></span>
+                                    <div>
+                                        PIR
+                                    </div>
+                                </label>
+                                <label class="md-checkbox block">
+                                    <input type="checkbox" name="demo2[]">
+                                    <span class="md-checkbox--fake"></span>
+                                    <div>
+                                        CO
+                                    </div>
+                                </label>
+                                <label class="md-checkbox block">
+                                    <input type="checkbox" name="demo2[]">
+                                    <span class="md-checkbox--fake"></span>
+                                    <div>
+                                        CO2
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-md-2">
+                                <button type="button" class="btn btn-block btn-warning btn-lg">Consult</button>
+                            </div>
+                            <div class="col-xs-3 col-md-2">
+                                <button type="button" class="btn btn-block btn-success btn-lg">Export</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 col-md-10">
+        <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="panel panel-default">
                 <div class="panel-heading"></div>
                 <div class="panel-body">
 
-
+                        <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options"
+                        chart-dataset-override="datasetOverride" chart-click="onClick" width="50" height="18">
+                      </canvas>
                 </div>
-
-                <table class="table table-striped">
-
-                    <tr>
-                        <th ng-repeat="c in columns">{{c.text}}</th>
-                    </tr>
-
-                    <tr ng-repeat="c in recargas | filter: dateRangeFilter('fechaPeticion', inicio, final)" id="{{c.id}}">
-
-                        <td>{{c.idModulo}}</td>
-                        <td>{{c.tag}}</td>
-                        <td>{{c.monto/100}}</td>
-                        <td>{{c.codigo}}</td>
-                        <td>{{c.fechaPeticion}}</td>
-
-
-                    </tr>
-                </table>
-
 
             </div>
         </div>
     </div>
     <div class="col-sm-12 col-md-1">&nbsp;</div>
-
-    <table id="basic-table" style="display: none;">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>First name</th>
-                <th>Last name</th>
-                <th>Email</th>
-                <th>Country</th>
-                <th>IP-address</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Donna</td>
-                <td>Moore</td>
-                <td>dmoore0@furl.net</td>
-                <td>China</td>
-                <td>211.56.242.221</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Janice</td>
-                <td>Henry</td>
-                <td>jhenry1@theatlantic.com</td>
-                <td>Ukraine</td>
-                <td>38.36.7.199</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Ruth</td>
-                <td>Wells</td>
-                <td>rwells2@constantcontact.com</td>
-                <td>Trinidad and Tobago</td>
-                <td>19.162.133.184</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Jason</td>
-                <td>Ray</td>
-                <td>jray3@psu.edu</td>
-                <td>Brazil</td>
-                <td>10.68.11.42</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Jane</td>
-                <td>Stephens</td>
-                <td>jstephens4@go.com</td>
-                <td>United States</td>
-                <td>47.32.129.71</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Adam</td>
-                <td>Nichols</td>
-                <td>anichols5@com.com</td>
-                <td>Canada</td>
-                <td>18.186.38.37</td>
-            </tr>
-        </tbody>
-    </table>
-
-</div>
 </div>
