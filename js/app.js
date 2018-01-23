@@ -1,4 +1,4 @@
-angular.module("app",['app.controllers', 'app.services', 'ui.router', 'ui.bootstrap', 'ngAnimate', 'toastr', 'ngTouch', 'ds.clock', 'chart.js', 'angularjs-gauge','720kb.datepicker'])
+angular.module("app",['app.controllers', 'app.services', 'ui.router', 'ui.bootstrap', 'ngAnimate', 'rzModule', 'toastr', 'ngTouch', 'ds.clock', 'chart.js', 'angularjs-gauge','720kb.datepicker'])
 .constant('API',"http://ttrservers.dyndns.org:9091/api/")
 .config(function($stateProvider, $urlRouterProvider, ChartJsProvider){
 
@@ -32,6 +32,16 @@ angular.module("app",['app.controllers', 'app.services', 'ui.router', 'ui.bootst
       'dash-view': {
         templateUrl: 'views/historic.html',
         controller: 'HistoricCtrl'
+      }
+    }
+})
+
+    .state("dashboard.sensors",{
+    url:"/sensors",
+    views: {
+      'dash-view': {
+        templateUrl: 'views/sensors.html',
+        controller: 'SensorsCtrl'
       }
     }
 })
